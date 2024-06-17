@@ -1,5 +1,9 @@
 from abc import ABC, abstractmethod
-from typing import Any, Generic, Literal, NotRequired, TypedDict, TypeVar
+try:
+    from typing import NotRequired, TypedDict
+except:
+    from typing_extensions import NotRequired, TypedDict
+from typing import Any, Generic, Literal, TypeVar
 
 
 Number = TypeVar("Number", int, float)
